@@ -307,7 +307,7 @@ section {
   color: #ff7644;
 }
 
-.banner {
+.showcase {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -333,18 +333,18 @@ section {
   background-repeat: no-repeat;
 }
 
-.banner_content {
+.showcase_content {
   max-width: 900px;
   text-align: center;
 }
 
-.banner_heading {
+.showcase_heading {
   font-size: 5em;
   font-weight: 700;
   color: #fff;
 }
 
-.banner_subheading {
+.showcase_subheading {
   font-size: 1.2em;
   color: #fff;
 }
@@ -649,7 +649,7 @@ section {
   .sticky .bar {
     background-color: #111;
   }
-  .banner_heading {
+  .showcase_heading {
     font-size: 4em;
   }
   .services .section_content {
@@ -670,7 +670,7 @@ section {
 }
 
 @media screen and (max-width: 550px) {
-  .banner_heading {
+  .showcase_heading {
     font-size: 3.5em;
   }
   .contact_form {
