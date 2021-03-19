@@ -79,7 +79,7 @@
     }
   }
 
-  .banner {
+  .showcase {
     &_heading {
       font-size: 4em;
     }
@@ -111,7 +111,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .banner {
+  .showcase {
     &_heading {
       font-size: 3.5em;
     }
