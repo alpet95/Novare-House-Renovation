@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Catamaran, sans-serif;
+  line-height: 1.3;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1em;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 100px;
+}
+
+.section {
+  &_heading {
+    font-size: 2.2em;
+    font-weight: 400;
+    color: #111;
+  }
+
+  &_subheading {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #111;
+  }
+
+  &_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  &_imgbox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+  &_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &_text {
+    padding: 15px 0 5px;
+    text-align: center;
+  
+    h3 {
+      font-weight: 600;
+      color: #111;
+    }
+  }
+}
+
+.scroll_btn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    opacity: 0;
+    background-color: $orange-color;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 2;
+
+    &:hover {
+      border-color: $orange-color;
+      background-color: #fff;
+
+      & span {
+        color: $orange-color;
+      }
+    }
+
+    span {
+      font-size: 1.5em;
+      color: #fff;
+    }
+}
+
+.menu_icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 6px 0;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+.change .bar_1 {
+  transform: rotate(-45deg) translate(-10px, 6px);
+}
+
+.change .bar_2 {
+  opacity: 0;
+}
+
+.change .bar_3 {
+  transform: rotate(45deg) translate(-5px, -4px);
+}
+
+.first-letter {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: $orange-color;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: $orange-color;
+  transition: 0.5s;
+
+  &:hover {
+    letter-spacing: 6px;
+  }
+}
+
+.line {
+  width: 20%;
+  height: 5px;
+  margin: 0 auto;
+  background-color: $orange-color;
+}

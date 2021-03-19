@@ -1,0 +1,133 @@
+@media screen and (max-width: 980px) {
+  .header,
+  .sticky {
+    padding: 15px 35px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .section {
+    &_heading,
+    &_subheading {
+      text-align: center;
+    }
+  }
+
+  .line {
+    display: none;
+  }
+
+  .about {
+    &_row {
+      flex-direction: column;
+    }
+
+    &_col {
+      width: 100%;
+
+      &:first-child {
+        order: 2;
+        margin-top: 20px;
+      }
+    }
+
+    &_heading {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    &_nav {
+      display: none;
+
+      & li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+
+      & a {
+        color: #111;
+        font-size: 1.6em;
+      }
+
+      &__active {
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 90.9px);
+        top: 90.9px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .menu_icon {
+    display: inline-block;
+  }
+
+  .sticky {
+    .bar {
+      background-color: #111;
+    }
+  }
+
+  .banner {
+    &_heading {
+      font-size: 4em;
+    }
+  }
+
+  .services {
+    .section_content {
+      margin-top: 20px;
+    }
+
+    & .section_imgbox {
+      height: 260px;
+  }
+
+    &_box {
+      margin: 10px;
+    }
+  }
+
+  .section_heading {
+    font-size: 1.8em;
+  }
+
+  .testimonials {
+    &_box {
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banner {
+    &_heading {
+      font-size: 3.5em;
+    }
+  }
+
+  .contact {
+    &_form {
+      padding: 35px 40px 75px;
+    }
+
+    .input_box {
+      .form_btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
